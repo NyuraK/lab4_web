@@ -5,15 +5,13 @@
     <title></title>
 </head>
 <body>
+<h3>Add news</h3>
 <form method="post">
     Title: <input type="text" name="title"><br>
-    Text: <input type="text" name="text"><br>
+    Text: <p><textarea rows="10" cols="45" name="text"></textarea></p>
     <input type="submit">
 </form>
 <?php
-include_once './config.php';
-
-
 $title = $_POST["title"];
 $body = $_POST["text"];
 if ($title != '' && $body != '') {

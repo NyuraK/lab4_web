@@ -9,6 +9,6 @@
 ?>
 <h1>News Corner</h1>
 <p>Your online news partner</p>
-<a href="addNews.php">Manage news</a>
+<a href="manage.php">Manage news</a>
 </body>
 </html>
