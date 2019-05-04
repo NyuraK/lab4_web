@@ -15,12 +15,10 @@
 $title = $_POST["title"];
 $body = $_POST["text"];
 if ($title != '' && $body != '') {
-    $sql = "INSERT INTO news (name, body) VALUES ('$title', '$body')";
+    $sql = "INSERT INTO news (title, body) VALUES ('$title', '$body')";
 }
 if (mysqli_query($link, $sql)) {
     echo "Records inserted successfully.";
-} else {
-    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
 ?>
 </body>
